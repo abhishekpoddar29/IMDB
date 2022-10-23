@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./home.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Cards from "./Cards";
+import HomeCards from "./HomeCards";
 const Home = () => {
     const [popularMovies, setMovies] = useState([])
     useEffect(() => {
@@ -13,8 +13,8 @@ const Home = () => {
             <div style={{display:'block', flexWrap:'warp', justifyContent:'center', alignItems:'center',maxWidth:'100vw'}}>
                 <center>
                     {
-                        popularMovies.map(movie => {
-                            return <Cards {...movie} />
+                        popularMovies.map((movie,index) => {
+                            return <HomeCards key={index} {...movie} />
                         })
                     }
                 </center>

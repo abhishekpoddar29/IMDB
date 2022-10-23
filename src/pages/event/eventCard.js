@@ -1,8 +1,7 @@
-const eventCard = (props) => (
-    <div style={{ margin:'2%', maxHeight:'320px', display:'inline-block',flexWrap:'wrap', maxWidth:'240px'}}>
-        <img src={props.image} alt={props.title+'-poster'}  style={{maxWidth:'240px'}} />
-        <div className='legend' style={{textAlign:'center', margin:'auto', padding:'0.5em'}}>{props.title}</div>
+const EventCard = (props) => (
+    <div style={{ margin:'1%', maxHeight:'320px', display:'inline-block',flexWrap:'wrap', maxWidth:'240px'}}>
+        <div className='legend' style={{textAlign:'center', margin:'auto', padding:'0.5em'}}>{props.eventTitle}</div>
     </div>
 )
 
-export default eventCard;
+export default EventCard;
